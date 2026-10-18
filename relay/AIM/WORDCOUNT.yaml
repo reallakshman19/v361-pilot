@@ -1,0 +1,27 @@
+# Standalone pilot label (v3.6.1). Owner + one coding agent; no TeamCoordinator.
+mode: standalone
+work: "WORDCOUNT"
+repository: "reallakshman19/v361-pilot"
+engineering_critical: "standard"
+version: "1.0.0"
+label_sha: "0a1b2c3"
+label:
+  problem: "There is no simple tool to count words in a text file."
+  main_aim: "A tested wordcount.py command-line tool in this throwaway repo."
+  outcomes:
+    O1: "python wordcount.py FILE prints the word count of FILE"
+  owner_constraints:
+    - "Standard library only (Owner, 18 Oct)"
+    - "Throwaway pilot repo; standalone mode (Owner, 18 Oct)"
+  task_outcome: "O1"
+  task_aim: "Build wordcount.py with tests, tests committed first."
+  done_when: "Tests pass, the Owner has checked the evidence and accepted."
+guidance:
+  not_now: []
+  watch: []
+  notes:
+    - "Parent issue: reallakshman19/v361-pilot#1"
+bindings:
+  - "reallakshman19/v361-pilot#1"
+history:
+  - "v1.0.0 · 2026-10-18 · create · standalone pilot · approved by the Owner"

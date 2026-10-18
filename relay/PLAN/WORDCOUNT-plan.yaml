@@ -1,0 +1,13 @@
+plan_version: "V36-1-PLAN-1"
+parent: "reallakshman19/v361-pilot#1"
+label:
+  work: "WORDCOUNT"
+  version: "1.0.0"
+  label_sha: "0a1b2c3"
+tasks:
+  - task_id: "V36-1-WORDCOUNT"
+    size: "XS"
+    outcome: "O1"
+    title: "wordcount.py with tests"
+    acceptance: "python wordcount.py FILE prints the word count; an empty file gives 0; a missing file exits non-zero; tests pass"
+    for_user: "Count the words in any text file with one command"
